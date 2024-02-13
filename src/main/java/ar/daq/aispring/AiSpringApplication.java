@@ -5,6 +5,8 @@ import org.springframework.ai.chat.messages.UserMessage;
 import org.springframework.ai.chat.prompt.Prompt;
 import org.springframework.ai.chat.prompt.SystemPromptTemplate;
 import org.springframework.ai.document.Document;
+import org.springframework.ai.openai.OpenAiChatOptions;
+import org.springframework.ai.openai.api.OpenAiApi;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -65,19 +67,6 @@ public class AiSpringApplication {
 		}
 
 	}
-
-//	@Bean
-//	ApplicationRunner applicationRunner(
-//			VectorStore vectorStore,
-//			@Value("classpath:lin15.pdf") Resource pdf,
-//			JdbcTemplate template) {
-//		return args -> {
-//
-////			setup(vectorStore, pdf, template);
-//
-//
-//		};
-//	}
 
 	@Bean
 	ApplicationRunner applicationRunner(
